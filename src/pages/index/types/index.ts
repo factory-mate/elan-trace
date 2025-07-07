@@ -3,6 +3,7 @@ export interface Data {
   产品编号?: string
   产品名称?: string
   净含量?: string
+  外净含量?: string
   批号?: string
   生产日期?: string
   配料表?: string

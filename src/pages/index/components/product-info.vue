@@ -27,8 +27,12 @@ const props = defineProps<Props>()
       value=""
     />
     <wd-cell
-      title="净含量"
+      title="内净含量"
       :value="props.data.净含量"
+    />
+    <wd-cell
+      title="外净含量"
+      :value="props.data.外净含量"
     />
     <wd-cell
       title="配料"
