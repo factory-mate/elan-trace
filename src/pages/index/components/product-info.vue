@@ -26,12 +26,12 @@ const props = defineProps<Props>()
       title="条形码"
       value=""
     />
-    <wd-cell
+    <!-- <wd-cell
       title="内净含量"
       :value="props.data.净含量"
-    />
+    /> -->
     <wd-cell
-      title="外净含量"
+      title="生产批量"
       :value="props.data.外净含量"
     />
     <wd-cell
