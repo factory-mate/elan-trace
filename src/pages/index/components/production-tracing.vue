@@ -6,6 +6,17 @@ interface Props {
 }
 
 const props = defineProps<Props>()
+
+function navToReport() {
+  if (!props.data.批号) {
+    uni.showToast({
+      title: '请先进行查询',
+      icon: 'none'
+    })
+    return
+  }
+  uni.navigateTo({ url: `/pages/report/index?batch=${props.data.批号}` })
+}
 </script>
 
 <template>
@@ -26,6 +37,12 @@ const props = defineProps<Props>()
       title="保质期"
       :value="props.data.保质期"
       title-width="80px"
+    />
+    <wd-cell
+      title="检验报告"
+      value="查看"
+      is-link
+      @click="navToReport"
     />
   </wd-cell-group>
   <view style="padding: 12px">

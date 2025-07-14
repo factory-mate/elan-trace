@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ENV } from '@/common'
+
 function navToLink(url: string) {
   window.open(url)
 }

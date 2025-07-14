@@ -10,10 +10,16 @@ declare module 'vue' {
     WdBadge: typeof import('wot-design-uni/components/wd-badge/wd-badge.vue')['default']
     WdCell: typeof import('wot-design-uni/components/wd-cell/wd-cell.vue')['default']
     WdCellGroup: typeof import('wot-design-uni/components/wd-cell-group/wd-cell-group.vue')['default']
+    WdCol: typeof import('wot-design-uni/components/wd-col/wd-col.vue')['default']
+    WdGap: typeof import('wot-design-uni/components/wd-gap/wd-gap.vue')['default']
+    WdImg: typeof import('wot-design-uni/components/wd-img/wd-img.vue')['default']
+    WdRow: typeof import('wot-design-uni/components/wd-row/wd-row.vue')['default']
     WdSearch: typeof import('wot-design-uni/components/wd-search/wd-search.vue')['default']
     WdStep: typeof import('wot-design-uni/components/wd-step/wd-step.vue')['default']
     WdSteps: typeof import('wot-design-uni/components/wd-steps/wd-steps.vue')['default']
     WdTab: typeof import('wot-design-uni/components/wd-tab/wd-tab.vue')['default']
+    WdTable: typeof import('wot-design-uni/components/wd-table/wd-table.vue')['default']
+    WdTableCol: typeof import('wot-design-uni/components/wd-table-col/wd-table-col.vue')['default']
     WdTabs: typeof import('wot-design-uni/components/wd-tabs/wd-tabs.vue')['default']
   }
 }
