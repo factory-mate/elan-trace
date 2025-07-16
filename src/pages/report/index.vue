@@ -29,6 +29,7 @@ interface ReportData {
 }
 
 const batch = ref('')
+const cInvCode = ref('')
 const reportData = ref<ReportData>({
   head: {},
   list_body: []
@@ -37,12 +38,15 @@ const reportData = ref<ReportData>({
 function getReportData() {
   uni.showLoading({ title: '加载中' })
   uni.request({
-    url: `${ENV.API_URL}/api/p/GetZJDInfo?Batch=${batch.value}`,
+    url: `${ENV.API_URL}/api/p/GetZJDInfo?Batch=${batch.value}&cInvCode=${cInvCode.value}`,
     method: 'GET',
     timeout: 30000,
     success: (res) => {
-      const { data } = res
-      reportData.value = res.data as ReportData
+      const { head, list_body } = res.data as ReportData
+      reportData.value = {
+        head: head ?? {},
+        list_body: list_body ?? []
+      }
     },
     complete: () => uni.hideLoading()
   })
@@ -50,6 +54,7 @@ function getReportData() {
 
 onLoad((options) => {
   batch.value = options?.batch
+  cInvCode.value = options?.cInvCode || ''
 })
 
 onShow(() => {

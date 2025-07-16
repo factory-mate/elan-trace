@@ -15,7 +15,9 @@ function navToReport() {
     })
     return
   }
-  uni.navigateTo({ url: `/pages/report/index?batch=${props.data.批号}` })
+  uni.navigateTo({
+    url: `/pages/report/index?batch=${props.data.批号}&cInvCode=${props.data.产品编号}`
+  })
 }
 </script>
 
