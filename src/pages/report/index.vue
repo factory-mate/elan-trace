@@ -109,7 +109,7 @@ onShow(() => {
           :fixed-header="false"
           :ellipsis="false"
           :stripe="false"
-          :rowHeight="25"
+          :rowHeight="40"
         >
           <wd-table-col
             prop="分析项目"
@@ -219,7 +219,7 @@ onShow(() => {
     transform: scale(0.6);
   }
   ::v-deep .wd-table__cell {
-    min-height: 25px;
+    min-height: 40px;
     padding: 0;
   }
 }
