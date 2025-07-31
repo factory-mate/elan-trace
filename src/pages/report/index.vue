@@ -4,7 +4,6 @@ import { onLoad, onShow } from '@dcloudio/uni-app'
 import { ref } from 'vue'
 import reportBanner from '@/static/images/report_banner.png'
 import reportBadge from '@/static/images/report_badge.jpg'
-// import domtoimage from 'dom-to-image-more'
 import { type ReportData } from './types'
 
 const batch = ref('')
@@ -13,7 +12,6 @@ const reportData = ref<ReportData>({
   head: {},
   list_body: []
 })
-// const imageUrl = ref('')
 
 function getReportData() {
   uni.showLoading({ title: '加载中' })
@@ -27,13 +25,6 @@ function getReportData() {
         head: head ?? {},
         list_body: list_body ?? []
       }
-      // const node = document.getElementById('image-view')
-      // domtoimage
-      //   .toPng(node)
-      //   .then((dataUrl: string) => {
-      //     imageUrl.value = dataUrl
-      //   })
-      //   .catch(() => {})
     },
     complete: () => uni.hideLoading()
   })
@@ -72,7 +63,9 @@ onShow(() => {
       </view>
 
       <view style="font-size: 18px; text-align: center; font-weight: 500">
-        <view>食品用香精成品分析报告(液体)</view>
+        <view>
+          食品用香精成品分析报告{{ reportData.head.模板名称 && `(${reportData.head.模板名称})` }}
+        </view>
         <view style="font-size: 12px">Certificate Of Analysis</view>
       </view>
 
@@ -209,12 +202,6 @@ onShow(() => {
       </wd-row>
     </view>
   </view>
-
-  <!-- <img
-    :src="imageUrl"
-    width="100%"
-    height="auto"
-  /> -->
 </template>
 
 <style lang="scss" scoped>

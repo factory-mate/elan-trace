@@ -11,6 +11,7 @@ export interface ReportData {
     检验日期?: string
     检验者?: string
     结论?: string
+    模板名称?: string
   }
   list_body: {
     分析项目: string

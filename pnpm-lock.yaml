@@ -53,9 +53,6 @@ importers:
       '@dcloudio/uni-quickapp-webview':
         specifier: 3.0.0-4030620241128001
         version: 3.0.0-4030620241128001(postcss@8.5.6)(rollup@4.43.0)(vue@3.5.17(typescript@4.9.5))
-      dom-to-image-more:
-        specifier: ^3.6.0
-        version: 3.6.0
       vue:
         specifier: ^3.5.17
         version: 3.5.17(typescript@4.9.5)
@@ -78,9 +75,6 @@ importers:
       '@dcloudio/vite-plugin-uni':
         specifier: 3.0.0-4030620241128001
         version: 3.0.0-4030620241128001(postcss@8.5.6)(rollup@4.43.0)(vite@5.2.8(@types/node@24.0.1)(sass@1.89.2)(terser@5.42.0))(vue@3.5.17(typescript@4.9.5))
-      '@types/dom-to-image':
-        specifier: ^2.6.7
-        version: 2.6.7
       '@uni-helper/vite-plugin-uni-components':
         specifier: ^0.2.0
         version: 0.2.0(rollup@4.43.0)
@@ -1442,9 +1436,6 @@ packages:
   '@types/babel__traverse@7.20.7':
     resolution: {integrity: sha512-dkO5fhS7+/oos4ciWxyEyjWe48zmG6wbCheo/G2ZnHx4fs3EU6YC6UM8rk56gAjNJ9P3MTH2jo5jb92/K6wbng==}
 
-  '@types/dom-to-image@2.6.7':
-    resolution: {integrity: sha512-me5VbCv+fcXozblWwG13krNBvuEOm6kA5xoa4RrjDJCNFOZSWR3/QLtOXimBHk1Fisq69Gx3JtOoXtg1N1tijg==}
-
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
@@ -2025,9 +2016,6 @@ packages:
   diff-sequences@27.5.1:
     resolution: {integrity: sha512-k1gCAXAsNgLwEL+Y8Wvl+M6oEFj5bgazfZULpS5CneoPPXRaCCW7dm+q21Ky2VEE5X+VeRDBVg1Pcvvsr4TtNQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
-
-  dom-to-image-more@3.6.0:
-    resolution: {integrity: sha512-0BB0M9gRRP7znKBNLRAvNyWnkDIzSgMSDcS7WdPDzPnWhW2YJqxUR/dCHiJ2HdCV3K2rVky5Vba8UF31mvrCuQ==}
 
   dom-walk@0.1.2:
     resolution: {integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==}
@@ -5704,8 +5692,6 @@ snapshots:
     dependencies:
       '@babel/types': 7.27.6
 
-  '@types/dom-to-image@2.6.7': {}
-
   '@types/estree@1.0.7': {}
 
   '@types/estree@1.0.8': {}
@@ -6371,8 +6357,6 @@ snapshots:
   detect-newline@3.1.0: {}
 
   diff-sequences@27.5.1: {}
-
-  dom-to-image-more@3.6.0: {}
 
   dom-walk@0.1.2: {}
 
