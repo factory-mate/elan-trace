@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onLoad } from '@dcloudio/uni-app'
-import { EnterpriseInfo, ProductInfo, ProductionTracing } from './components'
+import { EnterpriseInfo, ProductInfo, ProductionTracing, SunshineFactory } from './components'
 import { ref } from 'vue'
 import { ENV } from '@/common'
 import { type Data } from './types'
@@ -9,7 +9,12 @@ const pageHeight = ref(0)
 const id = ref(null)
 const searchText = ref('')
 const tabIndex = ref(0)
-const tabs = ref([{ title: '产品信息' }, { title: '生产溯源' }, { title: '企业信息' }])
+const tabs = ref([
+  { title: '产品信息' },
+  { title: '生产溯源' },
+  { title: '企业信息' },
+  { title: '阳光工厂' }
+])
 const queryData = ref<Data>({})
 
 function handleIdSearch() {
@@ -103,6 +108,7 @@ onLoad((option) => {
             v-if="index === 2"
             :data="queryData"
           />
+          <SunshineFactory v-if="index === 3" />
         </wd-tab>
       </block>
     </wd-tabs>
